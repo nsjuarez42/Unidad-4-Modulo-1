@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+/*todo position and size for media queries
+mobile first*/
 nav{
     position:fixed;
     top:0;
     width:100%;
     background-color: #D1D3D4;
 }
-nav img{
-    margin-right: 777px;
-    margin-left: 777px;
-    }
+article img{
+    height:auto;
+}
 #main{
     display:flex;
     flex-direction: row;
@@ -28,15 +29,78 @@ footer{
 a{
     font-family:'Roboto',sans-serif;
     text-decoration: none;
-    font-size: 45px;
     color:black;
-    margin-right: 10px;
 }
 p{
-    font-size:25px;
     font-family: 'Roboto',sans-serif;
 }
 h1{
-    font-size:40px;
     font-family: 'Lato',sans-serif;
+}
+
+@media only screen and (min-width:320px){
+    nav img{
+        margin-right:13vw;
+        margin-left:13vw;
+    }
+    a{
+        font-size:340px;
+    }
+    .column{
+        margin-right: 20px;
+    }
+    article img{
+        max-width: 310px;
+        height: 550px;
+    }
+}
+@media only screen and (min-width:641px){
+    nav img{
+        margin-right:13vw;
+        margin-left:13vw;
+        height:70px;
+    }
+    a{
+        font-size: 35px;
+        margin-right:1vw;
+    }
+    .column{
+        margin-top: 7vw;
+     margin-right: 3vw;
+    }
+    article img{
+        width: 30vw;
+    }
+    p{
+        font-size: 30px;
+    }
+    h1{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width:1025px){
+    nav img{
+        margin-right: 24vw;
+        margin-left: 25vw;
+
+    }
+    a{
+        font-size: 40px;
+        margin-right: 15px;
+    }
+    .column{
+        margin-top: 9vw;
+        margin-right:6vw;
+    }
+    article img{
+        width: 24vw;
+        height:auto;
+    }
+    p{
+        font-size: 25px;
+    }
+    h1{
+        font-size: 35px;
+    }
 }
